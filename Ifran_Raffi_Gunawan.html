@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Technology Academy Espeon</title>
+        <!-- Ifran Raffi Gunawan
+        232410102006
+        Teknologi Informasi - PWEB Kelas B -->
+    </head>
+    <body style="padding:0; margin:0; box-sizing:border-box; background-color:rgb(250, 234, 215)">
+        <span></span>
+        <nav style="width:100%; height: 125px; background:  linear-gradient(141deg, rgba(131,60,185,1) 20%, rgba(60,125,197,1) 51%,
+        rgba(217,34,123,1) 82%); display:flex; align-items:center; justify-content:space-between; position:relative; z-index:999; box-shadow: 0px 2px 4px
+        rgba(119, 24, 214, 0.25); top:0; left:0;">
+            <div>
+                <img src="img/LOGO.png" alt="Espeon Information Technology Academy" width="90px" height="115px" style="margin-left: 120px;">
+            </div>
+            <ul style="display:flex; list-style:none; gap: 60px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <li><a href="" style="text-decoration:none; color:white; font-size:22px; ">Homepage</a></li>
+                <li><a href="" style="text-decoration:none; color:white; font-size:22px; ">Broadcast</a></li>
+                <li><a href="" style="text-decoration:none; color:white; font-size:22px; ">Marketplace</a></li>
+                <li><a href="" style="text-decoration:none; color:white; font-size:22px; ">Contact</a></li>
+                <li><a href="" style="text-decoration:none; color:white; font-size:22px; "><u>Registration</u></a></li>
+            </ul>
+            <div style="display:block;">
+                <form style="margin-right:50px;">
+                    <input type="text" placeholder="What do you want to find?" style="outline: none; width:300px; height: 30px; 
+                    border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white; 
+                    transition: all 150ms ease-in-out; color: #666;">
+                </form>
+                <div>
+                    <button style="background-color: rgb(69, 118, 255); color:aliceblue; padding: 6px 17px; text-align: center; 
+                    text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius:8px;">Sign Up</button>
+                    <button style="background-color: white; padding: 6px 17px; text-align: center; text-decoration: none;
+                    display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius:8px">Sign In</button>
+                </div>
+            </div>
+        </nav>
+        <div style="position:absolute;margin-top:30%; left:50%; transform: translate(-50%, -50%);">
+            <section style="max-width: 700px; justify-content:center; padding: 25px 30px; border-radius: 8px;
+            box-shadow: 05px 10px rgba(0, 0, 0, 0.235);
+            background: linear-gradient(141deg, rgba(247,244,207,1) 20%, rgba(136,179,227,1) 51%, rgba(255,204,229,1) 82%);">
+                <form method="POST" action="proses.php">
+                    <h1 align="center" style="font-size:25px; font-weight:500; position:relative;"><b>Student Membership Account Registration</b></h1>
+                    <hr>
+                    <article>This website is intended for students who want to get more features on the Academy Technology Espeon website</article>
+                    <div>                
+                        <label for="nama">Your name:</label><br>
+                        <input type="text" name="nama" id="nama" style="outline: none; width:300px; height: 30px; border-radius: 5px;
+                        border: 1px solid #ccc; font-size: 0.875rem; background-color: white; transition: all 150ms ease-in-out; color: #666;"><br>
+                    </div>
+                    <div>
+                        <label for="password">Your password:</label><br>
+                        <input type="password" name="password" size="m" maxlength="8" style="outline: none; width:300px;
+                        height: 30px; border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white;
+                        transition: all 150ms ease-in-out; color: #666;"><br>
+                    </div>
+                    <div>
+                        <label for="tanggalLahir">Birth date:</label><br>
+                        <input type="date" id="tanggalLahir" name="tanggalLahir" required style="outline: none; width:300px; height: 30px;
+                        border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white;
+                        transition: all 150ms ease-in-out; color: #666;"><br>
+                    </div>
+                    <div>
+                        <label for="tempatLahir">Birth place:</label><br>
+                        <input type="text" id="tempatLahir" name="tempatLahir" required style="outline: none; width:300px; height: 30px; border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white; transition: all 150ms ease-in-out; color: #666;"><br>
+                    </div>
+                    <div>                
+                        <label for="nama">Number Card Student:</label><br>
+                        <input type="text" name="nim" id="nim" style="outline: none; width:300px; height: 30px; border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white; transition: all 150ms ease-in-out; color: #666;"><br>
+                    </div>
+                    <div>
+                        <label>Gender :</label><br>
+                        <input type="radio" id="laki-laki" name="jenisKelamin" value="laki-laki">
+                        <label for="laki-laki">Male</label><br>
+                        <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
+                        <label for="perempuan">Female</label><br>
+                    </div>
+                    <div>                
+                        <label for="Gmail">Your gmail:</label><br>
+                        <input type="email" name="gmail" id="gmail" style="outline: none; width:300px; height: 30px;
+                        border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white;
+                        transition: all 150ms ease-in-out; color: #666;"><br>
+                    </div>
+                    <div>                
+                        <label for="Number">Your number:</label><br>
+                        <input type="number" name="nomor" id="nomor" style="outline: none; width:300px; height: 30px;
+                        border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white;
+                        transition: all 150ms ease-in-out; color: #666;"><br>
+                    </div><br>
+                    <div>
+                        <label for="deskripsi">Address:</label>
+                        <textarea id="deskripsi" name="deskripsi" rows="4" cols="50" style="outline: none; width:300px;
+                        height: 30px; border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white;
+                        transition: all 150ms ease-in-out; color: #666;"></textarea>
+                    </div><br>
+                    <div>
+                        <label for="pilihan">Choice your Major:</label>
+                        <select id="pilihan" name="hasilpilihan" style="outline: none; width:300px; height: 30px;
+                        border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white;
+                        transition: all 150ms ease-in-out; color: #666;">
+                            <option value="null">None</option>
+                            <option value="opsi1">Astrronomy Technology</option>
+                            <option value="opsi2">Physics Astronomy</option>
+                            <option value="opsi3">Optical Astronomy</option>
+                            <option value="opsi4">Informatical Astronomy</option>
+                            <option value="opsi5">Geology Astronomy</option>
+                            <option value="opsi6">Relation Astronomy</option>
+                            <option value="opsi7">Galaction</option>
+                            <option value="opsi8">Mechine Technology</option>
+                            <option value="opsi7">Engine Mechine</option>
+                            <option value="opsi8">Scientic Astronomy</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="Semester">Choice your Semester:</label>
+                        <select id="Semester" name="hasilsemester" style="outline: none; width:300px; height: 30px;
+                        border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white; transition: all 150ms ease-in-out; color: #666;">
+                            <option value="null">None</option>
+                            <option value="s1">Semester 1 - 2 </option>
+                            <option value="s2">Semester 3 - 4</option>
+                            <option value="s3">Semester 5 - 6</option>
+                            <option value="s4">Semester 7 - 8</option>
+                            <option value="sx"> > 8</option>
+                        </select>
+                    </div><br>
+                    <div>                
+                        <label for="Kode">Special Code:</label><br>
+                        <input type="text" name="kode" id="kode" style="outline: none; width:300px;
+                        height: 30px; border-radius: 5px; border: 1px solid #ccc; font-size: 0.875rem; background-color: white;
+                        transition: all 150ms ease-in-out; color: #666;"><br>
+                    </div><br>
+                    <div>
+                        <input type="submit" value="Send" style="background-color: rgb(112, 168, 91); color:aliceblue; padding: 6px 17px;
+                        text-align: center; text-decoration: none; display: inline-block;
+                        font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius:8px;"><br>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div style="position:absolute; margin-top:72%; left:50%; transform: translate(-50%, -50%);max-width: 700px;
+        justify-content:center; padding: 25px 30px; border-radius: 8px; box-shadow: 05px 10px rgba(0, 0, 0, 0.235); background: linear-gradient(141deg, rgba(247,244,207,1) 20%, rgba(136,179,227,1) 51%, rgba(255,204,229,1) 82%);">
+            <h1>Registration Confirmation Operational Schedule</h1>
+            <hr>
+            <br>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Day Schedule</th>
+                        <th>Free Times</th>
+                        <th>Public relations</th>
+                        <th colspan="2">Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Tuesday</td>
+                        <td> 03.00 - 08.00 & 15.00 - 19.00</td>
+                        <td>Angriani Diva S.Sos</td>
+                        <td>082384648678</td>
+                        <td>Angrere.@Espeon.com</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday - Thursday</td>
+                        <td> 02.00 - 07.00 & 13.00 - 17.00</td>
+                        <td>Avanda Gianova S.Sos</td>
+                        <td colspan="2">08311293373733</td>
+                    </tr>
+                    <tr>
+                        <td>Friday Saturday</td>
+                        <td>02.00 - 07.00 & 11.00 - 15.00</td>
+                        <td>Wennik Sri S.Kom</td>
+                        <td>082836378208</td>
+                        <td>Enikma.@Espeon.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Open 24 jam</td>
+                        <td>Mirna Coffna S.H</td>
+                        <td colspan="2">082836378208</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer style="margin-top:90%;;width:100%; padding:20px;
+        background: linear-gradient(141deg, rgba(131,60,185,1) 20%, rgba(60,125,197,1) 51%, rgba(217,34,123,1) 82%);
+        align-items:center; justify-content:space-between; position:relative; z-index:999; box-shadow: 0px 2px 4px rgba(119, 24, 214, 0.25); top:0; left:0;">
+            <h2 align="center"style="color:white;">Information Contact</h2>
+            <p align="center" style="color:white"> Gmail : EspeonAcademyIT@gmail.com</p>
+            <p align="center" style="color:white"> Telephone Number : 0882221103550</p>
+            <p align="center" style="color:white">&copy; 2024 Espeon</p>
+        </footer>
+    </body>
+</html>
